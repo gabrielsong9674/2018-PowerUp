@@ -2421,7 +2421,7 @@ public class Autonomous
 				ElevatorLevel.maintainScalePosition();
 				if(stopWatch.get() < .6)
 				{
-					IntakeWheels.shoot(.9);
+					IntakeWheels.shoot(.5);//Klint told me to reduce the speed
 				}
 				else
 				{
