@@ -180,14 +180,10 @@ public class Robot extends IterativeRobot
 	public void runDrivetrain()
 	{
 		enc.setEncoderValues();
-		if(joy.leftBumper)
-		{
+		
 			Drivetrain.arcadeDrive(Encoders.leftEncoderValue, Encoders.rightEncoderValue, joy.leftJoySticky * .45, joy.rightJoyStickx * .5);
-		}
-		else
-		{
-			Drivetrain.arcadeDrive(Encoders.leftEncoderValue, Encoders.rightEncoderValue, joy.leftJoySticky, joy.rightJoyStickx);
-		}
+
+		
 	}
 	
 	public void runMotorSafety()
